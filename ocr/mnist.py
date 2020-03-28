@@ -26,7 +26,7 @@ def main():
     img_name = ask_img()
     model = load_model()
     cover, image = resize_img(img_name)
-    # cover.save(img_name, image.format)
+    cover.save(img_name, image.format)
 
     img_arr = np.array(cover)
     img_reshaped = img_arr.reshape(1, -1)
