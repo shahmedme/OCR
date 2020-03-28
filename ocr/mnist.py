@@ -13,7 +13,7 @@ def resize_img(img_name):
     with open(img_name, 'r+b') as f:
         with Image.open(f) as image:
             cover = resizeimage.resize_cover(image, [28, 28])
-            cover.save(img_name, image.format)
+            # cover.save(img_name, image.format)
             return cover, image
 
 
